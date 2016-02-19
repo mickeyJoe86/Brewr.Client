@@ -6,14 +6,19 @@
 
     <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
-<body ng-controller="mainCtrl">
-    <h1>{{title}}</h1>
+<body>
+    <ui-view></ui-view>
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <!--Angular Library-->
     <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="../bower_components/angular-resource/angular-resource.min.js"></script>
     <!--Angular Modules-->
     <script src="app.js"></script>
+    <script src="common.services.js"></script>
+    <!--Angular Controllers-->
+    <script src="Home/homeCtrl.js"></script>
+    <!--Angular DataServices-->
 </body>
 </html>

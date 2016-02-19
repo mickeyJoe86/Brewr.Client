@@ -1,1 +1,5 @@
+##Client and Server side JS dependencies
 bower_components/
+node_modules/ 
+
+dist/

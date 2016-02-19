@@ -1,11 +1,21 @@
 (function () {
     'use strict';
 
-    angular.module('brewr', []);
+    var app = angular.module('brewr', ['ui.router', 'ngResource']);
 
-    angular
-        .module('brewr')
-        .controller('mainCtrl', ["$scope", function ($scope) {
-            $scope.title = "message";
-        }]);
+    app.config(["$stateProvider",
+            "$urlRouterProvider",
+            "$locationProvider",
+        function ($stateProvider, $urlRouterProvider, $locationProvider) {
+
+            $urlRouterProvider.otherwise("/");
+
+            $stateProvider
+                .state("home", {
+                    url: "/",
+                    templateUrl: "Home/home.html",
+                    controller: 'homeCtrl'
+                });
+        }
+    ]);
 }());
