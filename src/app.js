@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    var app = angular.module('brewr', ['ui.router', 'ngResource']);
+    var app = angular.module('brewr', ['ui.router', 'ngResource', 'common.services']);
 
     app.config(["$stateProvider",
             "$urlRouterProvider",

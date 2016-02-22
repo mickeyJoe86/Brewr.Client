@@ -5,6 +5,6 @@
 		.module('common.services', [])
 		.constant("appSettings",
 		{
-			serverPath: 'http://localhost/'
+			serverPath: 'http://localhost:56883/'
 		});
 }());
